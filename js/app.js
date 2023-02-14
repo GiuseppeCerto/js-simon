@@ -31,7 +31,9 @@ function numberVerifier(){
 
 function areTheyEqual (pcNumber, rememberedNumbers){
 
-    console.log(equalNumber, differentNumber)
+    const equalNumber = []
+
+    const differentNumber = []
 
     for ( let i = 0; i < 5; i++){
 
@@ -44,8 +46,11 @@ function areTheyEqual (pcNumber, rememberedNumbers){
         
     }
 
-    console.log("Hai indovinato i seguenti numeri:" + ' ' + equalNumber)
+    console.log('I numeri da ricordare erano:' + ' ' + randomNumberArr)
 
-    console.log("Hai dimenticato invece:" + ' ' + differentNumber)
+    console.log('I numeri che hai inserito sono:' + ' ' + utentNumber)
+
+    console.log("I numeri che hai indovinato sono:" + ' ' + equalNumber.length + ', ' + equalNumber)
 }
+
 
